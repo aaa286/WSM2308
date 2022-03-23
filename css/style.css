@@ -1,0 +1,19 @@
+/* 우선순위: 포괄 < 구체 */
+/* 우선순위: class < id */
+/* 우선순위: 같은 급일 때, 위 < 아래 코드 */
+body {
+    /* property: value; */
+    color: gray;
+}
+li {
+    color: teal;
+}
+#leader {
+    color: gold;
+}
+.Korea {
+    color: crimson !important;
+}
+.Incheon {
+    color: darkblue;
+}
