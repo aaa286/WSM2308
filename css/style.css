@@ -5,7 +5,11 @@ body {
     /* property: value; */
     color: gray;
 }
-li {
+body > ul > li {
+    color: green;
+}
+body li, h6 {
+    /* >: 자식, 띄어쓰기: 자손 */
     color: teal;
 }
 #leader {
@@ -16,4 +20,20 @@ li {
 }
 .Incheon {
     color: darkblue;
+}
+h1+h2 {
+    /* 마주하는 첫번째 자매 */
+    background: skyblue;
+}
+h2~h3 {
+    /* 마주하는 모든 자매 */
+    background: aqua;
+}
+li:nth-child(2) {
+    /* n번째 자식 */
+    text-decoration: underline;
+}
+[type="password"] {
+    /* HTML 태그 속성은="값" */
+    background-color: chocolate;
 }
